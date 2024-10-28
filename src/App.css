@@ -1,0 +1,97 @@
+#root {
+    max-width: 1280px;
+    padding: 2rem;
+}
+
+.head {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    column-gap: 30px;
+}
+
+.crudTitle {
+    font-size: 2em;
+}
+
+.crudUpdate {
+    width: 50px;
+    height: 50px;
+    color: hsl(118, 67%, 38%);
+    border-radius: 25px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: white;
+    font-size: x-large;
+}
+
+.notesList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 256px);
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.noteItem {
+    position: relative;
+    z-index: 0;
+    padding: 0.6em 1.2em;
+    margin-top: 16px;
+    border: 1px solid black;
+}
+
+.noteRemove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 8px 13px;
+    line-height: 1;
+    color: #fe3a3d;
+    border-radius: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+    transform: translate(50%, -50%);
+    background-color: white;
+    font-size: x-large;
+}
+
+.newTextForm {
+    width: 256px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.newlabel {
+    padding-top: 2em;
+}
+
+.newText {
+    display: block;
+    width: 256px;
+    height: 100px;
+    padding-top: 0.6em;
+    border: 1px solid black;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 8px;
+    resize: none;
+}
+
+.newTextAdd {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid black;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    text-align: center;
+    line-height: 45px;
+
+}
